@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade</title>
+</head>
+<body>
+    <script>
+        var marks=parseInt(prompt('Enter the mark:'));
+        switch(marks>0)
+        {
+            case (marks>=90 && marks <100): document.writeln('S grade');break;
+            case (marks >=80 && marks <90): document.writeln('a grade');break;
+            case (marks >=70 && marks <80): document.writeln('b grade');break;
+            case (marks >=60 && marks <70): document.writeln('c grade');break;
+            case (marks >=50 && marks <60): document.writeln('d grade');break;
+            default:document.writeln('Fail');
+        }
+    </script>
+    
+</body>
+</html>

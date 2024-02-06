@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <title>Customer Details</title>
+    <style>
+        .cd {
+            margin: 50px 280px;
+            /* border-width: 10px; */
+            width: 50%;
+            padding: 2%;
+
+            display: block;
+            border: 10px;
+            box-shadow:rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+            padding: auto;
+            background-image:url('D:/Html work space/images/sample2.jpg');
+            background-size: cover;
+        }
+
+        .cd input {
+            width: 94%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
+
+        .cd label {
+            padding: 1px;
+            color: black;
+            text-decoration-color: white;
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;            
+
+        }
+
+       
+
+        .cd input[type=checkbox] {
+            
+            width: 2%;
+            color: white;
+        }
+
+        .cd input[type=submit] {
+            width: 10%;
+        }
+        a:link{
+            color: black;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: darkmagenta;
+            cursor: pointer;
+        }
+        option{
+            color:blue;
+            background-color: bisque;
+        
+        }
+        #subs:hover{
+            color: darkgreen;
+            cursor: grabbing;
+            background-color: cornflowerblue;
+            
+        }
+        #checky{
+            color: white;
+        }
+        .cd input[type=radio]{
+            width: 2%;
+        }
+    
+
+        
+    </style>
+  
+</head>
+
+<body>
+
+
+    <form onsubmit="return validation()">
+
+        <div class="cd">
+            <h1 style="color: blue;">Customer Details</h1>
+            <label>
+                Customer Name:<input type="text" id="Customer_name" placeholder="your_name" >
+            </label>
+            <br>
+            <br>
+            <label>
+                Customer Age:<input type="number" min="1" id="Customer_age"required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Customer DOB:<input type="date" max="" id="Customer_DOB" required >
+            </label>
+            <br>
+            <br>
+            <label>
+                Customer Address:<input type="text" id="Customer_Address"required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Customer PH NO: <input type="number" id="PH_NO"required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Gender <input type="radio" name="gender" id="male" value="male" required>Male
+                <input type="radio" name="gender" id="female" value="female"required>Female
+            </label>
+            <br>
+            <br>
+            <label>
+                Customer Email id :<input type="email" id="customer_Email_id" >
+            </label>
+            <br>
+            <br>
+            <label>State</label>
+            <Select id="State" required>
+                <option value=null>select a state</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TEL">Telungana</option>
+                <option value="KL">Kerala</option>
+                <option value="KA">Karnataka</option>
+                <option value="UP">Uttar Pradesh</option>
+            </Select>
+            <br>
+            <br>
+            <label>
+                <input type="number" placeholder="Enter your Aadhar NO" id="aadhar_number" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="text" placeholder="Enter your PAN NO" id="pan_number"required>
+            </label>
+            <br>
+            <br>
+            <input type="checkbox" id="checkboxs" required ><span id="checky"> I AGREE TO YOUR TERMS AND CONDITIONS</span> <a href="https://www.unesco.org/en/education">HELP YOURSELF</a>
+            <br>
+            <br>
+            <INPUT type="submit" id="subs" NAME="SUBMIT" required>
+            </div>
+    </form>
+  
+    
+    <div>
+        <h4>Customer_name:</h4><span id="Customer_nameop"></span>
+        <h4>Customer_age:</h4><span id="Customer_ageop"></span>
+        <h4>Customer_dob:</h4><span id="Customer_dobop"></span>
+        <h4>Customer_Address:</h4><span id="Customer_addressop"></span>
+        <h4>gender:</h4><span id="customer_gender"></span>
+        <h4>Customer_phone:</h4><span id="Customer_phoneop"></span>
+        <h4>Customer_Email_id:</h4><span id="customer_emailop"></span>
+        <h4>customer_state</h4><span id="states"></span>
+        <h4>Customer_aadhar:</h4><span id="Customer_aadharop"></span>
+        <h4>Customer_pan:</h4><span id="customer_panop"></span>
+        <h4>checkbox:</h4><span id="subscribe"></span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="forms.js"></script>
+
+</body>
+
+</html>

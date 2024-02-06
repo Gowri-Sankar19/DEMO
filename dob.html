@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var current_date = new Date();
+        var Birth_date = new Date(2002, 0, 19);
+        var differ = current_date - Birth_date;
+        var year_days = 365, milli = 1000, sec = 60; mins = 60; day = 24; month = 31; week = 7;
+        var age = differ / (milli * sec * mins * day * year_days);
+        var mon = differ / (milli * sec * mins * day * month);
+        var weeks = differ / (milli * sec * mins * day * week);
+        var day = differ / (milli * sec * mins * day);
+        var m = differ / (milli * sec * mins);
+        var s = differ / (milli * sec);
+        var ms = differ / (milli);
+
+
+
+        document.writeln('age is ', Math.floor(age), "<br>");
+
+        document.writeln('month is ', Math.floor(mon), "<br>");
+      
+        document.writeln('week is ', Math.floor(weeks), "<br>");
+
+        document.writeln('day is ', Math.floor(day), "<br>");
+
+        document.writeln('min is ', Math.floor(s), "<br>");
+
+        document.writeln('sec is ', Math.floor(ms), "<br>");
+
+
+
+
+
+    </script>
+</body>
+
+</html>

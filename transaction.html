@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        var balance = 0;
+        
+
+        while (transaction_method != 'x') {
+            var transaction_method = prompt('enter the transaction');
+
+            switch (transaction_method) {
+                case 'd':{
+                    var deposit = parseInt(prompt('enter the deposit_amount:'));
+                    balance = deposit + balance;
+
+                   
+                    break;}
+
+
+                case 'w':{
+                    var withdraw = parseInt(prompt('enter the withdraw_amount'));
+                    if (withdraw > balance)
+                     {
+                        alert('Insufficient balance');
+                       
+                    } 
+                    else {
+                        balance = balance - withdraw;
+                        
+
+
+                    }
+                    
+
+                    break;
+
+
+            }}
+
+        } 
+        document.writeln( balance);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

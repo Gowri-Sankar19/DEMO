@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        var Customer_amount=parseInt(prompt('Enter customer Amount:'));
+        const discount_rate=10;
+       
+        if(Customer_amount>=1500){
+            var formula=Customer_amount*discount_rate/100;
+            var final_amount=Customer_amount-formula;
+            document.writeln('discount_rate',formula,"<br>",'final amount is',final_amount);
+            
+        }
+        else{
+            document.writeln(Customer_amount,'No discount');
+        }
+
+    </script>
+    
+</body>
+</html>
