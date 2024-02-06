@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workers</title>
+</head>
+
+<body>
+    <script>
+        var no_of_workers=4;
+        var no_of_days=3;
+        var paid_amount=240;
+        var four_workers_sal;
+        var workers ;
+        var days ;
+        var avg_sal ;
+        var total_salary;
+        four_workers_sal=paid_amount/no_of_days;
+        avg_sal=four_workers_sal/no_of_workers;
+        workers = parseInt(prompt('HOW MANY WORKERS WORKED ON THE FIELD?' ));
+        days = parseInt(prompt('HOW MANY DAYS THE WOKERS ACTUALLY WORKED? ENTER THE DAYS'));
+        alert("good to go lad");
+
+        total_salary = (avg_sal * workers) * (days);
+        document.writeln("<b>the salary amount is</b> :",total_salary,"<br>");
+        document.writeln("datatype of the total_salary is &nbsp;&nbsp;",typeof  total_salary)
+
+    </script>
+
+</body>
+
+</html>

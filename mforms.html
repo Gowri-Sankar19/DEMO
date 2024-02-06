@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>Slips</title>
+    <style>
+        .jk {
+            /* margin: 100px; */
+            border-width: 20px;
+            padding: 10px;
+            width: 50px;
+           /* background-color: lightgreen;*/
+
+
+            /* display: block;
+            border: 20px;
+            margin: 100px; */
+           /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            padding: 30px;
+           background-color: burlywood*/
+           
+        }
+
+        .jk input,
+        label {
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            padding: 10px;
+
+        }
+
+        .jk table {
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            /* margin: 50px; */
+            border:double;
+           /* border-color: yellow;*/
+            /* border: width 50px; */
+            padding: 30px;
+            width: max-content;
+           
+            
+        }
+    </style>
+    <script src="Jquery\jquery-3.5.1.js"></script>
+    <script src="event.js"></script>
+</head>
+
+<body background="D:\Html work space\images\pup.jpg"
+background-size="cover";>
+
+
+   
+
+    
+    <!-- <button onclick="alert('you clicked')">Click</button> -->
+    <!-- <button id="clickbtn">Click</button> -->
+
+    
+
+
+            <form onsubmit="return valid()">
+                <div class="jk">
+                <!-- <input  type="text" id="username"> -->
+               
+                <!-- <p id="userop"></p>
+                <div id="div11">
+                    <p>This is sample txt bro  </p>
+                    <div id="div1op"></div>
+                </div> -->
+
+            <table>
+
+                <h1 style="color: blue;">Mforms</h1>
+                <tr>
+                    <td>
+                        Name &nbsp; &nbsp;&nbsp;&nbsp;:
+                    </td>
+                    <td>
+                        <input type="text" id="username" placeholder="Enter your name:">
+                        <div id="userid"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        gender &nbsp;&nbsp; &nbsp;:
+                    </td>
+                    <td>
+                        <input type="radio" name="gender">male
+                        <input type="radio" name="gender">female
+                    </td>
+                <tr>
+                    <td>
+                        Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+                        
+                    </td>
+                    <td>
+                        <input type="number" id="age" min=1 placeholder="Enter your Age:">
+                        <div id="userage"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        phone
+                        <select>
+                            <option>91</option>
+                            <option>23</option>
+                            <option>76</option>
+                            <option>34</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="numberip" placeholder="977******:">
+                        <div id="numberdiv"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">I agree to the<a href="https://www.google.com/"> terms and conditions</a>
+                        <br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <input type="submit" value="submit">&nbsp;<input type="reset" value="reset"> -->
+                        <button  id="submitbtn">submit</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        
+    </form>
+    <div>
+        <h4>user_name:</h4><span id="usernameop"></span>
+        <h4>user_age:</h4><span id="userageop"></span>
+        <h4>user_ph:</h4><span id="userphonespan"></span>
+
+
+
+    </div>
+    
+</body>
+
+</html>

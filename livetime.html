@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing</title>
+</head>
+
+<body>
+       
+    
+
+
+    <script>
+       var time1=document.getElementById('lt');
+       var time2=new Date();
+       var hrs=time2.getHours();
+       var mins=time2.getMinutes();
+       var sec=time2.getSeconds();
+        var h=hrs,m=mins,s=sec,fmt='';
+       setInterval(function(){
+            if(hrs<10){
+                h='0'+hrs;
+            }
+            if(mins<10){
+                m='0'+mins;
+            }
+            if(sec<10){
+                s='0'+sec;
+            }
+            if(hrs<12){
+                fmt='am';
+            }
+            else{
+                fmt='pm';
+            }
+            time1.innerHTML='Time: '+h+':'+m+':'+s+''+fmt;
+       },1000);
+      
+
+
+
+    </script>
+
+</body>
+
+</html>
